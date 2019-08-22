@@ -36,7 +36,7 @@ values
 ;
 
 insert into public.usuario_rol(usuario_id, rol_id)
-select 1, r.id		-- martin tendra todos los roles
+select 1, r.id		-- dios tendra todos los roles
 from public.rol r
 ;
 
