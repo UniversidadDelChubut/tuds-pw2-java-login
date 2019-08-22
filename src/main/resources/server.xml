@@ -1,0 +1,17 @@
+<!-- a continuación del siguiente bloque: -->
+<!--<Realm className="org.apache.catalina.realm.LockOutRealm">
+         This Realm uses the UserDatabase configured in the global JNDI
+             resources under the key "UserDatabase".  Any edits
+             that are performed against this UserDatabase are immediately
+             available for use by the Realm.  
+        <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
+      </Realm>-->
+
+<Realm allRolesMode="authOnly" className="org.apache.catalina.realm.JDBCRealm" driverName="org.postgresql.Driver"
+       connectionName="postgres" connectionPassword="docker" connectionURL="jdbc:postgresql://localhost:5432/postgres" 
+       roleNameCol="nombre_rol" userCredCol="password" userNameCol="nombre_usuario" 
+       userRoleTable="vw_usuarios_tomcat" userTable="vw_usuarios_tomcat">
+    <CredentialHandler className="org.apache.catalina.realm.MessageDigestCredentialHandler" algorithm="MD5" iterations="1"/>
+</Realm>
+      
+<!-- <Host appBase="webapps"... sigue...
