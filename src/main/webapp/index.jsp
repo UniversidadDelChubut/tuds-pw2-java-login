@@ -10,6 +10,9 @@
     </head>
     <body>
         <h1>Bienvenido, ${pageContext.request.getRemoteUser()}</h1>
+        <c:if test="${pageContext.request.isUserInRole('admin')}">
+        <a href="<c:url value="/admin"/>">Administración</a>
+        </c:if>
         <a href="<c:url value="/logout"/>">Cerrar sesión</a>
     </body>
 </html>

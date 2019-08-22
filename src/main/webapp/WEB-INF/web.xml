@@ -21,7 +21,8 @@
             <url-pattern>/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>acceso</role-name>
+            <role-name>usuario</role-name>
+            <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>
     <security-constraint>
@@ -31,7 +32,7 @@
             <url-pattern>/admin/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>administrador</role-name>
+            <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>
   

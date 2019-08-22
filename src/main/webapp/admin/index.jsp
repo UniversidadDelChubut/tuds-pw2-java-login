@@ -10,6 +10,6 @@
     </head>
     <body>
         <h1>Administración</h1>
-        <p>A esta área sólo ingresan los administradores (rol 'administrador')</p>
+        <p>A esta área sólo ingresan los administradores (rol 'admin')</p>
     </body>
 </html>
