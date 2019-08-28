@@ -18,7 +18,6 @@ public class AdminServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("hora", new Date());
         req.getRequestDispatcher("/WEB-INF/admin/listado.jsp").forward(req, resp);
     }
     
