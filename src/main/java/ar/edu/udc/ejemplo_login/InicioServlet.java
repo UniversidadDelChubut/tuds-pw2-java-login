@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author rmpalacio
  */
-@WebServlet("/admin")
-public class AdminServlet extends HttpServlet {
+@WebServlet("")
+public class InicioServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("hora", new Date());
-        req.getRequestDispatcher("/WEB-INF/admin/listado.jsp").forward(req, resp);
+        req.getSession().setAttribute("hora_ingreso", new Date());
+        req.getRequestDispatcher("/WEB-INF/inicio.jsp").forward(req, resp);
     }
     
 }
