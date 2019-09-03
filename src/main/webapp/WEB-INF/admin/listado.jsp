@@ -8,6 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ejemplo página segura</title>
+        <link href="<c:url value="/css/estilos.css"/>" rel="stylesheet"/>
     </head>
     <body>
         <h1>Administración</h1>
