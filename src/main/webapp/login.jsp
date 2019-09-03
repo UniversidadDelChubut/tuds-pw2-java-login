@@ -1,10 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html"%>
 <html>
     <head>
         <title>Login local</title>
+        <link href="<c:url value="/css/estilos.css"/>" rel="stylesheet"/>
     </head>
     <body>
-        <h1>Iniciar sesión</h1>
+        <h1>Iniciar sesiÃ³n</h1>
         
         <form name="j_security_form" method="post" action="j_security_check">
             <p>Usuario: <input type="text" name="j_username"></p>
