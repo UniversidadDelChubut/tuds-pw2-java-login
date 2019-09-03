@@ -35,6 +35,16 @@
             <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>
+    
+    <!-- URLs de acceso público (ej. css, js), no requieren login -->
+    <security-constraint>
+        <display-name>publico</display-name>
+        <web-resource-collection>
+            <web-resource-name>publico</web-resource-name>
+            <url-pattern>/css/*</url-pattern>
+            <url-pattern>/js/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
   
   
     <login-config>
